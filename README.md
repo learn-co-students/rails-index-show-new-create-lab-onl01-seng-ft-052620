@@ -1,5 +1,5 @@
 # Index, Show, New, Create Lab
-
+#
 ## Objectives
 
 1. Build a RESTful `index` action
