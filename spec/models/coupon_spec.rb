@@ -8,4 +8,10 @@ describe Coupon do
   it 'can be created' do
     expect(@coupon).to be_valid
   end
+
+  it 'requires the presence of a coupon_code and store' do
+    Coupon.create()
+    expect(Coupon.last).to eq(@coupon)
+  end
+
 end
