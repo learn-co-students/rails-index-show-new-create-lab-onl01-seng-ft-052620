@@ -1,0 +1,9 @@
+1.	<h3>Coupon Form</h3><%= form_tag coupons_path do %>
+2.	<label>Coupon code:</label><br>
+3.	<%= text_field_tag :'coupon[coupon_code]' %><br>
+4.
+5.	<label>Store:</label><br>
+6.	<%= text_area_tag :'coupon[store]' %><br>
+7.
+8.	<%= submit_tag "Submit Coupon" %>
+9.	<% end %>
