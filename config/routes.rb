@@ -53,4 +53,18 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  
+   # # index
+  # get "/coupons", to: "coupons#index", as: "coupons"
+
+  # # new / create
+  # get "/coupons/new", to: "coupons#new", as: "new_coupon"
+  # post "/coupons", to: "coupons#create"
+
+  # # show
+  # get "/coupons/:id", to: "coupons#show", as: "coupon"
+  resources :coupons, only: [:index, :new, :create]
+
+  get '/coupon/:id', to: 'coupons#show', as: 'coupon'
 end
